@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: '2010-09-09'
-Description: Resources needed to deploy scheduled lambda function.
+Description: Resources needed to deploy scheduled lambda function with ECR image.
 Resources:
   LambdaFunction:
     Type: AWS::Lambda::Function
