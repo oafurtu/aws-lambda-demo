@@ -3,9 +3,8 @@ Description: Resources needed to deploy scheduled lambda function with ECR image
 Resources:
   LambdaFunction:
     Type: AWS::Lambda::Function
-    DependsOn: ECRRepository
     Properties:
-      FunctionName: my-func-name-lambda-func  # optional
+      FunctionName: test  # optional
       Description: A starter AWS Lambda function.
       Role: arn:aws:iam::257492816994:role/aws-lambda-role
       PackageType: Image
@@ -25,7 +24,7 @@ Resources:
     Type: AWS::Events::Rule
     DependsOn: LambdaFunction
     Properties:
-      Name: my-func-name-cloudwatch # optional
+      Name: test # optional
       Description: "ScheduledRule"
       ScheduleExpression: "cron(00 12 ? * MON-FRI *)"
       State: "ENABLED"
