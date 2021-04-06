@@ -4,7 +4,7 @@ Resources:
   LambdaFunction:
     Type: AWS::Lambda::Function
     Properties:
-      FunctionName: test  # optional
+      FunctionName: my-func-name-lambda  # optional
       Description: A starter AWS Lambda function.
       Role: arn:aws:iam::257492816994:role/aws-lambda-role
       PackageType: Image
@@ -24,7 +24,7 @@ Resources:
     Type: AWS::Events::Rule
     DependsOn: LambdaFunction
     Properties:
-      Name: test # optional
+      Name: my-func-name-cloudwatch # optional
       Description: "ScheduledRule"
       ScheduleExpression: "cron(00 12 ? * MON-FRI *)"
       State: "ENABLED"
