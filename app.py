@@ -32,7 +32,8 @@ def __send_email(msg: str) -> None:
     mail_message = f'Subject: {mail_subject}\n\n{msg}'
 
     # Send Email
-    server = smtplib.SMTP_SSL('smtp.gmail.com', 587)
+    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server.starttls()
     server.login(gmail_user, gmail_password)
     server.sendmail(mail_from, mail_to, mail_message)
     server.close()
@@ -61,3 +62,5 @@ def handler(event, context):
         msg = 'Clear skies today!'
 
     __send_email(msg)
+
+handler(None, None)
