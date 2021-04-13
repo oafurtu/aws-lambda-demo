@@ -1,7 +1,7 @@
 # aws-lambda-demo
 
 ## Description
-This repo serves as a reference for the YouTube video found here [].
+This repo serves as a reference for the YouTube playlist found here https://youtube.com/playlist?list=PL0dOL8Z7pG3L4hi2SLJqojxshXNtsJQ_r.
 
 This video will cover end-to-end how to:
 
