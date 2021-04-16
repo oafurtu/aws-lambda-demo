@@ -10,3 +10,6 @@ This video will cover end-to-end how to:
 * push the image to AWS with CI/CD using GitHub Actions
 * scheduling the lambda function to run as a recurring cron job
 * building custom AWS CloudFormation to automate creation of lambda function
+
+## License
+[BSD 3-Clause License](https://github.com/alexanderdamiani/aws-lambda-demo/blob/main/LICENSE)
